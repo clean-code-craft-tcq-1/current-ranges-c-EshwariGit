@@ -51,6 +51,7 @@ Adapt/adopt/extend the `yml` files from one of your workflow folders.
 1. Write the next failing test.
 
 Implement one failing test and at least one passing test:
-
-- _enter the name of a **passing** test
-- _enter the name of a **failing** test
+**Passing Testcases**
+1. Testcase to count for valid ranges
+**Failing Testacses**
+1. Testcase which fails when the valid range comparision is false
