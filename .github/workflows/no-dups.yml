@@ -1,4 +1,4 @@
-name: No Duplications
+name: No Duplications for more than 3 lines and 48 tokens
 
 on: [push, pull_request]
 
