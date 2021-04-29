@@ -2,6 +2,8 @@
 
 #include "test/catch.hpp"
 #include "CurrentRanges.h"
+#include "stdlib.h"
+#include "math.h"
 
 TEST_CASE("Pass Test case to check NULL values")
 {
