@@ -13,14 +13,13 @@ BreachType inferRange(double value, double lowerLimit, double upperLimit) {
 
 BreachLimit classifyTemperatureBreach[3] = {{0,35}, {0,45}, {0,40}};
 
-
-InfoType checkAndAlert(AlertTarget alertTarget, double temperatureInC) {
+InfoType(*Alert[])(BreachType) = {sendToController, sendToEmail,sendToConsole};
+InfoType checkAndAlert(AlertTarget alertTarget, BatteryCharacter batteryChar, double temperatureInC) {
   InfoType Value = FAIL;
-  BreachType breachType = inferRange(classifyTemperatureBreach.lowerLimit,  classifyTemperatureBreach.upperLimit, temperatureInC);
-  
+  BreachType breachType = inferBreach(classifyTemperatureBreach[batteryChar.coolingType].lowerLimit,  classifyTemperatureBreach[batteryChar.coolingType].upperLimit, temperatureInC);
+  Value = Alert[alertTarget](breachType);
   return Value;
 
 }
-
 
 // Print to console
