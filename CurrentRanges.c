@@ -16,8 +16,8 @@ BreachLimit classifyTemperatureBreach[3] = {{0,35}, {0,45}, {0,40}};
 
 InfoType checkAndAlert(AlertTarget alertTarget, BatteryCharacter batteryChar, double temperatureInC) {
   InfoType Value = FAIL;
-  BreachType breachType = inferBreach(classifyTemperatureBreach[batteryChar.coolingType].lowerLimit,  classifyTemperatureBreach[batteryChar.coolingType].upperLimit, temperatureInC);
-  Value = Alert[alertTarget](breachType);
+  BreachType breachType = inferRange(classifyTemperatureBreach[batteryChar.coolingType].lowerLimit,  classifyTemperatureBreach[batteryChar.coolingType].upperLimit, temperatureInC);
+
   return Value;
 
 }
