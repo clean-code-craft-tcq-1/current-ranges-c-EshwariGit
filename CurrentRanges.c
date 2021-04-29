@@ -3,7 +3,7 @@
 
 BreachType inferRange(int *value, int range) {
 
-  if((value ==  0) && (range ==0 ) )
+  if((value ==  NULL ) && (range ==0 ) )
   {
     return exception;
   }
