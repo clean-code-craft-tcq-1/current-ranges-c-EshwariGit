@@ -8,7 +8,7 @@
 TEST_CASE("Pass Test case to check NULL values")
 {
     
-  REQUIRE(inferRange(NULL,1) == exception);
+  REQUIRE(inferRange(NULL,1) == PASS);
  
    
 }
