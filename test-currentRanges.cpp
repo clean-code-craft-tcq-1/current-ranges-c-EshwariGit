@@ -6,7 +6,7 @@
 TEST_CASE("Pass Test case to check NULL values")
 {
     
-  REQUIRE(inferRange(NULL) == PASS);
+  REQUIRE(inferRange(NULL,1) == PASS);
  
    
 }
