@@ -1,10 +1,6 @@
 #pragma once
 
-typedef enum {
-  PASSIVE_COOLING,
-  HI_ACTIVE_COOLING,
-  MED_ACTIVE_COOLING
-} CoolingType;
+
 
 typedef enum {
   NORMAL,
@@ -18,16 +14,7 @@ typedef struct {
 }BreachLimit;
 
 
-typedef enum {
-  TO_CONTROLLER,
-  TO_EMAIL,
-  TO_CONSOLE
-} AlertTarget;
 
-typedef struct {
-  CoolingType coolingType;
-  char brand[48];
-} BatteryCharacter;
 
 typedef enum{
 	FAIL,
