@@ -5,10 +5,24 @@
 #include "stdlib.h"
 #include "math.h"
 
-TEST_CASE("Pass Test case to check NULL values")
+TEST_CASE("Fail Test case to check NULL values")
 {
     
   REQUIRE(inferRange(0,1) == FAIL);
+ 
+   
+}
+TEST_CASE("Pass Test case to check NULL values")
+{
+    
+  REQUIRE(inferRange(0,8) == PASS);
+ 
+   
+}
+TEST_CASE("Pass Test case to check NULL values")
+{
+    
+  REQUIRE(inferRange(0,11) == FAIL);
  
    
 }
