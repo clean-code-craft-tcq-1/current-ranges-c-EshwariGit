@@ -3,14 +3,11 @@
 #include "test/catch.hpp"
 #include "CurrentRanges.h"
 
-TEST_CASE("infers the ranges according to limits -passing testcase") {
-  REQUIRE(inferRange(12, 20, 30) == TOO_LOW);
+TEST_CASE("Pass Test case to check NULL values")
+{
+    
+  REQUIRE(inferRange(NULL) == PASS);
+ 
+   
 }
-TEST_CASE("infers the ranges according to not in limits -failing testcase") {
-  REQUIRE(inferRange(12, 25, 47) == TOO_LOW);
-  
-}
-
-
-
 
