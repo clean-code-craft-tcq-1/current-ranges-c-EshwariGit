@@ -7,11 +7,11 @@ BreachType inferRange(int *value, int range) {
   {
     return exception;
   }
-  else(( range < 10 ))
+  else if (( range < 10 ))
   {
     return PASS;
   }
-  else (( range > 10 ))
+  else if (( range > 10 ))
   {
     return FAIL;
   }
