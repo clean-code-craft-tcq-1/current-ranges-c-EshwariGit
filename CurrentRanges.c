@@ -11,12 +11,12 @@ BreachType inferRange(double value, double lowerLimit, double upperLimit) {
   return NORMAL;
 }
 
-BreachLimit classifyTemperatureBreach[3] = {{0,35}, {0,45}, {0,40}};
+BreachLimit CurrentReadingRange[3] = {{0,35}, {0,45}, {0,40}};
 
 
 InfoType checkAndAlert(AlertTarget alertTarget, BatteryCharacter batteryChar, double temperatureInC) {
   InfoType Value = FAIL;
-  BreachType breachType = inferRange(classifyTemperatureBreach[batteryChar.coolingType].lowerLimit,  classifyTemperatureBreach[batteryChar.coolingType].upperLimit, temperatureInC);
+  BreachType breachType = inferRange(CurrentReadingRange[batteryChar.coolingType].lowerLimit,  CurrentReadingRange[batteryChar.coolingType].upperLimit, temperatureInC);
 
   return Value;
 
