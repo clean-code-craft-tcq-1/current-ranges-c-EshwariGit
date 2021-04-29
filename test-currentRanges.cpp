@@ -22,7 +22,7 @@ TEST_CASE("Pass Test case to check NULL values")
 TEST_CASE("fail Test case to check values")
 {
     
-  REQUIRE(inferRange(0,11) == FAIL);
+  REQUIRE(inferRange(0,11) == PASS);
  
    
 }
