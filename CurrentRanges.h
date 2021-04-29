@@ -35,7 +35,5 @@ typedef enum{
 } InfoType;
 InfoType checkAndAlert(
   AlertTarget alertTarget, BatteryCharacter batteryChar, double temperatureInC);
-BreachType inferBreach(double value, double lowerLimit, double upperLimit);
-InfoType sendToController(BreachType breachType);
-InfoType sendToEmail(BreachType breachType);
-InfoType sendToConsole(BreachType breachType);
+BreachType inferRange(double value, double lowerLimit, double upperLimit);
+
