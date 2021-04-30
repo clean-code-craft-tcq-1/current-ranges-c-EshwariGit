@@ -5,32 +5,10 @@
 #include "stdlib.h"
 #include "math.h"
 
-TEST_CASE("Fail Test case to check NULL values")
-{
-    
-  REQUIRE(inferRange(0,1,1) == PASS);
- 
-   
-}
-TEST_CASE("Fail Test case to check exception values")
-{
-    
-  REQUIRE(inferRange(0,1,2) == PASS);
- 
-   
-}
-TEST_CASE("Pass Test case to check NULL values")
-{
-    
-  REQUIRE(inferRange(0,8,3) == PASS);
- 
-   
-}
-TEST_CASE("fail Test case to check values")
-{
-    
-  REQUIRE(inferRange(0,11,4) == FAIL);
- 
-   
+TEST_CASE("To check if total current samples out of range") {
+    int CurrentRange[] = {3, 3, 5, 4};
+    int listofvalues = sizeof(CurrentRange) / sizeof(CurrentRange[0]);
+    int BreachType[] ={3,5};
+  REQUIRE(BMSCurrent_InRange(listofvalues,CurrentRange,BreachType) == 3;
 }
 
