@@ -22,4 +22,5 @@ TEST_CASE("To check if the samples are out range") {
   REQUIRE(inferRange(listofvalues,CurrentRange,BreachType) == 7);
 }
 
-/*
+*/
+
