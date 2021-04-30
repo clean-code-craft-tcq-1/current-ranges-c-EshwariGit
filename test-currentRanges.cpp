@@ -9,6 +9,6 @@ TEST_CASE("To check if total current samples out of range") {
     int CurrentRange[] = {3, 3, 5, 4};
     int listofvalues = sizeof(CurrentRange) / sizeof(CurrentRange[0]);
     int BreachType[] ={3,5};
-  REQUIRE(BMSCurrent_InRange(listofvalues,CurrentRange,BreachType) == 3;
+  REQUIRE(inferRange(listofvalues,CurrentRange,BreachType) == 3;
 }
 
