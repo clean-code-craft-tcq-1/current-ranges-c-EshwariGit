@@ -1,4 +1,4 @@
-name: Limit complexity for 5
+name: Limit complexity for 3
 
 on: [push, pull_request]
 
@@ -13,4 +13,4 @@ jobs:
       run: pip install lizard
 
     - name: Limit complexity
-      run: $HOME/.local/bin/lizard --exclude "./test/*" --CCN 5
+      run: $HOME/.local/bin/lizard --exclude "./test/*" --CCN 3
