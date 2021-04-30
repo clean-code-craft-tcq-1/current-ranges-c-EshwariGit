@@ -15,7 +15,7 @@ TEST_CASE("Fail Test case to check NULL values")
 TEST_CASE("Fail Test case to check exception values")
 {
     
-  REQUIRE(inferRange(0,1) == exception);
+  REQUIRE(inferRange(0,1) == FAIL);
  
    
 }
