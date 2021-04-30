@@ -1,15 +1,12 @@
 #pragma once
 
-
-
 typedef enum {
   exception,
   FAIL,
-  PASS,
-INVALID
+  PASS
 } BreachType;
 
 
-BreachType inferRange(int *value, int range);
+BreachType inferRange(int listofvalues,int *CurrentRange,int *BreachType);
 
 
