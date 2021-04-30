@@ -7,6 +7,6 @@ typedef enum {
 } BreachType;
 
 
-BreachType inferRange(int listofvalues,int *CurrentRange,int *BreachType);
+int inferRange(int listofvalues,int *CurrentRange,int *BreachType);
 
 
