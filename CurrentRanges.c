@@ -15,7 +15,9 @@ BreachType inferRange(int *value, int range) {
   {
     return FAIL;
   }
-    
+  
+  
+  // Add Range calculation func
 
 }
 
