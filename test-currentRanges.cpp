@@ -8,28 +8,28 @@
 TEST_CASE("Fail Test case to check NULL values")
 {
     
-  REQUIRE(inferRange(0,1) == PASS);
+  REQUIRE(inferRange(0,1,1) == PASS);
  
    
 }
 TEST_CASE("Fail Test case to check exception values")
 {
     
-  REQUIRE(inferRange(0,1) == PASS);
+  REQUIRE(inferRange(0,1,2) == PASS);
  
    
 }
 TEST_CASE("Pass Test case to check NULL values")
 {
     
-  REQUIRE(inferRange(0,8) == PASS);
+  REQUIRE(inferRange(0,8,3) == PASS);
  
    
 }
 TEST_CASE("fail Test case to check values")
 {
     
-  REQUIRE(inferRange(0,11) == FAIL);
+  REQUIRE(inferRange(0,11,4) == FAIL);
  
    
 }
