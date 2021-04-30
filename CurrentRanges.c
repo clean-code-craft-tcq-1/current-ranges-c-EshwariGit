@@ -1,24 +1,20 @@
 #include "CurrentRanges.h"
 #include <stdio.h>
 
-BreachType inferRange(int *value, int range) {
 
-  if((value ==  NULL ) && (range ==0 ) )
-  {
-    return exception;
-  }
-  else if (( range < 10 ))
-  {
-    return PASS;
-  }
-  else if (( range > 10 ))
-  {
-    return FAIL;
-  }
-  
-  
-  // Add Range calculation func
-
+BreachType inferRange(int listofvalues,int *CurrentRange,int *BreachType)
+{
+    int i,count = 0;
+    for(i=0;i<listofvalues;i++)
+    {
+        if((CurrentRange[i] >= BreachType[0]) && (CurrentRange[i] <= BreachType[1]))
+        {
+            count++;
+        }
+    }
+    return count;
 }
+
+
 
 // Print to console
